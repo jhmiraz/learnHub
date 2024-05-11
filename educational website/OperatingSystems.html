@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LearnHub</h1>
+        <div class="user-options">
+          <a href="home.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="signUp.html">Sign Up</a>
+          <a href="profile.html">Profile</a>
+            
+        </div>
+    </header>
+    <section id="subject-selection">
+        <h2>Choose a video on Operating Systems</h2>
+        <div class="video-container">
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/ukLxQXj89Lg?si=kOHD2Sw2rZN6Y-fh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/beeB7AOYpmE?si=YpsVU2SMODjnH4hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/Yj2ymGIoL7A?si=BQA_rlvbGLBxrCEi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/Yj2ymGIoL7A?si=ex6jqv-4RZn-k_GQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/2QCx-jPoF-U?si=hyg-zuRLmrLYSuxd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="725" height="315" src="https://www.youtube.com/embed/bOnhQQe8OLA?si=av_riNSPW4flRV64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+      </section>
+    
+      <button id="quiz-button">Take Quiz</button>
+      <div id="quiz-popup" class="hidden">
+        <h3>Artificial Intelligence Quiz</h3>
+        <form id="ai-quiz">
+          <fieldset>
+            <legend>Question 1:</legend>
+            <p>What does AI stand for?</p>
+            <label><input type="radio" name="q1" value="a"> Artificial Intelligence</label><br>
+            <label><input type="radio" name="q1" value="b"> Advanced Intelligence</label><br>
+            <label><input type="radio" name="q1" value="c"> Automated Intelligence</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Question 2:</legend>
+            <p>Which programming language is commonly used in AI?</p>
+            <label><input type="radio" name="q2" value="a"> Python</label><br>
+            <label><input type="radio" name="q2" value="b"> Java</label><br>
+            <label><input type="radio" name="q2" value="c"> C++</label><br>
+          </fieldset>
+  
+          <fieldset>
+              <legend>Question 2:</legend>
+              <p>Which programming language is commonly used in AI?</p>
+              <label><input type="radio" name="q3" value="a"> Python</label><br>
+              <label><input type="radio" name="q3" value="b"> Java</label><br>
+              <label><input type="radio" name="q3" value="c"> C++</label><br>
+            </fieldset>
+            <fieldset>
+              <legend>Question 2:</legend>
+              <p>Which programming language is commonly used in AI?</p>
+              <label><input type="radio" name="q4" value="a"> Python</label><br>
+              <label><input type="radio" name="q4" value="b"> Java</label><br>
+              <label><input type="radio" name="q4" value="c"> C++</label><br>
+            </fieldset>
+            <fieldset>
+              <legend>Question 2:</legend>
+              <p>Which programming language is commonly used in AI?</p>
+              <label><input type="radio" name="q5" value="a"> Python</label><br>
+              <label><input type="radio" name="q5" value="b"> Java</label><br>
+              <label><input type="radio" name="q5" value="c"> C++</label><br>
+            </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+          <!-- Quiz result will be displayed here -->
+        </div>
+      </div>
+      
+</body>
+</html>

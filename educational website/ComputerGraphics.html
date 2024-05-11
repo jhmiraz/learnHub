@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LearnHub</h1>
+        <div class="user-options">
+          <a href="home.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="signUp.html">Sign Up</a>
+          <a href="profile.html">Profile</a>
+            
+        </div>
+    </header>
+    <section id="subject-selection">
+        <h2>Choose a video on Computer Graphics</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dDcBD-__k-s?si=Qg8HbsqYDzwZTyYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NfZHrkXeqJs?si=0tVS-OUktNoPx9Au" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NfZHrkXeqJs?si=3tSyyj5rpv0tje2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8sethTit6L4?si=6gQfd5V1Sa-dPJTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0eQv0MQBu7Q?si=s7-XrHX7jhzkhcoW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gto5QZ7-DaE?si=FZ7fHhEA3XPeHHI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        </div>
+      </section>
+      <button id="quiz-button">Take Quiz</button>
+      <div id="quiz-popup" class="hidden">
+        <DIV class="quiz-box">
+        <h3>Artificial Intelligence Quiz</h3>
+        <form id="ai-quiz">
+          <fieldset>
+            <legend>Question 1:</legend>
+            <p>What are the two main categories of computer graphics based on dimensionality?</p>
+            <label><input type="radio" name="q1" value="a"> Raster and vector graphics</label><br>
+            <label><input type="radio" name="q1" value="b"> 2D and 3D graphics</label><br>
+            <label><input type="radio" name="q1" value="c"> Procedural and non-procedural graphics</label><br>
+            <label><input type="radio" name="q1" value="d"> User-created and pre-rendered graphics</label><br>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Question 2:</legend>
+            <p>What is the process of creating a realistic image in 3D graphics called?</p>
+            <label><input type="radio" name="q2" value="a"> Texturing</label><br>
+            <label><input type="radio" name="q2" value="b"> Rendering</label><br>
+            <label><input type="radio" name="q2" value="c"> Modeling</label><br>
+            <label><input type="radio" name="q2" value="d"> Animation</label><br>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Question 3:</legend>
+            <p>What is the primary difference between raster and vector graphics?</p>
+            <label><input type="radio" name="q3" value="a"> Raster graphics are better for photos, vector graphics for illustrations</label><br>
+            <label><input type="radio" name="q3" value="b"> Raster graphics are made of pixels, vector graphics are made of paths</label><br>
+            <label><input type="radio" name="q3" value="c"> Raster graphics are 3D, vector graphics are 2D</label><br>
+            <label><input type="radio" name="q3" value="d"> Raster graphics are faster to render, vector graphics are more scalable</label><br>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Question 4:</legend>
+            <p>What is a common technique used to create realistic lighting effects in computer graphics?</p>
+            <label><input type="radio" name="q4" value="a"> Ray tracing</label><br>
+            <label><input type="radio" name="q4" value="b"> Bump mapping</label><br>
+            <label><input type="radio" name="q4" value="c"> Anti-aliasing</label><br>
+            <label><input type="radio" name="q4" value="d"> Polygon mesh reduction</label><br>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Question 5:</legend>
+            <p>What is the process of creating smooth movement for objects in computer graphics called?</p>
+            <label><input type="radio" name="q5" value="a"> Rigging</label><br>
+            <label><input type="radio" name="q5" value="b"> Keyframing</label><br>
+            <label><input type="radio" name="q5" value="c"> Motion capture</label><br>
+            <label><input type="radio" name="q5" value="d"> Animation</label><br>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+          <!-- Quiz result will be displayed here -->
+        </div>
+      </div>
+  
+      <div id="confirmation-message" class="hidden">Form submitted successfully!</div>
+    </DIV> 
+    
+    
+</body>
+</html>

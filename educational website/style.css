@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative; /* Add this to make the user options position relative */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.user-options {
+    margin-top: 10px;
+}
+
+.user-options a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.user-options a:hover {
+    background-color: #555;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.course {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f1f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course h2 {
+    margin-top: 0;
+}
+
+.course p {
+    margin-top: 10px;
+}
+
+.course-color {
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+#subject-selection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#subject-selection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#subject-selection ul {
+    list-style: none;
+    padding: 0;
+}
+
+#subject-selection ul li {
+    margin-bottom: 10px;
+}
+
+#subject-selection ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#subject-selection ul li a:hover {
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*for quiz */
+
+.hidden {
+    display: none;
+}
+#quiz-button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+fieldset {
+    text-align: justify;
+    margin-bottom: 20px;
+    border: 1px solid #b8b5b5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quiz-box {
+    border: 100px solid #ffffff;
+    border-top: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+#quiz-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Add some top margin for separation */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style the quiz result */
+#quiz-result {
+    margin-top: 20px; /* Add some top margin for separation */
+    padding: 10px;
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Dark text color */
+}
+
+
+/* login page*/
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    text-align: center; /* Center contents horizontally */
+}
+
+.login-container h2 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align label and input to the left */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*for feedback */
+
+#confirmation-message {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+
+
+/* for sign up */
+.signup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    text-align: center; /* Center contents horizontally */
+}
+
+.signup-container h2 {
+    margin-top: 0; /* Remove default margin */
+}
+
+
+/* Profile page */
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto; /* space after the header */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    margin: 0;
+}
+
+.profile-actions a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    color: #4CAF50; /* Green text */
+    transition: background-color 0.3s ease;
+}
+
+.profile-actions a:hover {
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text */
+}
+
+
+.edit-profile-container {
+    margin: 50px auto; /* Center vertically and horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Limit width */
+    max-width: 600px; /* Max width */
+    text-align: center;
+}
+
+/* Change Password Container */
+.change-password-container {
+    margin: 50px auto; /* Center vertically and horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Limit width */
+    max-width: 600px; /* Max width */
+    text-align: center;
+}

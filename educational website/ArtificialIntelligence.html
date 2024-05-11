@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>LearnHub</h1>
+      <div class="user-options">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signUp.html">Sign Up</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </header>
+    <section id="subject-selection">
+      <h2>Choose a video on Artificial Intelligence</h2>
+      <div class="video-container">
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/R-ZMdOcZdXA?si=koM4MdvB1AxAIOjF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/6U0vQAUhcjU?si=c_M13Zse6Cn3HETb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/6nAFGRSpIl4?si=pzawQAwyY9Lsj2Kq"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/OCDC62vJUeQ?si=CXX6aJ4QmRZD2YBO"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/qZ0cqq27uXw?si=6IvS179qoifEwqRh"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="725"
+          height="315"
+          src="https://www.youtube.com/embed/cc4UjODBKLQ?si=GooanEJ_TLE-rYxn"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <button id="quiz-button">Take Quiz</button>
+    <div id="quiz-popup" class="hidden">
+      <DIV class="quiz-box">
+      <h3>Artificial Intelligence Quiz</h3>
+      <form id="ai-quiz">
+        <fieldset>
+          <legend>Question 1:</legend>
+          <p>What does AI stand for?</p>
+          <label><input type="radio" name="q1" value="a"> Artificial Intelligence</label><br>
+          <label><input type="radio" name="q1" value="b"> Advanced Intelligence</label><br>
+          <label><input type="radio" name="q1" value="c"> Automated Intelligence</label><br>
+        </fieldset>
+        <fieldset>
+          <legend>Question 2:</legend>
+          <p>Which programming language is commonly used in AI?</p>
+          <label><input type="radio" name="q2" value="a"> Python</label><br>
+          <label><input type="radio" name="q2" value="b"> Java</label><br>
+          <label><input type="radio" name="q2" value="c"> C++</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3:</legend>
+            <p>Which programming language is commonly used in AI?</p>
+            <label><input type="radio" name="q3" value="a"> Python</label><br>
+            <label><input type="radio" name="q3" value="b"> Java</label><br>
+            <label><input type="radio" name="q3" value="c"> C++</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Question 4:</legend>
+            <p>Which programming language is commonly used in AI?</p>
+            <label><input type="radio" name="q4" value="a"> Python</label><br>
+            <label><input type="radio" name="q4" value="b"> Java</label><br>
+            <label><input type="radio" name="q4" value="c"> C++</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Question 5:</legend>
+            <p>Which programming language is commonly used in AI?</p>
+            <label><input type="radio" name="q5" value="a"> Python</label><br>
+            <label><input type="radio" name="q5" value="b"> Java</label><br>
+            <label><input type="radio" name="q5" value="c"> C++</label><br>
+          </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="quiz-result" class="hidden">
+        <!-- Quiz result will be displayed here -->
+      </div>
+    </div>
+
+    <div id="confirmation-message" class="hidden">Form submitted successfully!</div>
+  </DIV> 
+  </body>
+</html>
